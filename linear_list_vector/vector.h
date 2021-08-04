@@ -1,5 +1,5 @@
 /*********
-LINEAR_LIST_VECTOR  templates
+LINEAR_LIST_VECTOR  template
 yianyian5 
 2021.08.01
 **********/
