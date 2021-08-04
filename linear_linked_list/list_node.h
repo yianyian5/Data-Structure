@@ -1,8 +1,12 @@
-/***********
-LINEAR_LINKED_LIST_NODE template
-yianyian5
-2021.08.02
-***********/
+/*
+ * @Author: yianyian5
+ * @Date: 2021-08-02
+ * @LastEditTime: 2021-08-04 21:04:50
+ * @LastEditors: yianyian5
+ * @FilePath: \Data-Structure\linear_linked_list\list_node.h
+ * Talk is cheap,show me the code.
+ */
+
 
 #ifndef LINEAR_LINKED_LIST_NODE
 #define LINEAR_LINKED_LIST_NODE

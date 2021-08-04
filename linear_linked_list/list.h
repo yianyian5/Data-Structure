@@ -1,9 +1,13 @@
+/*
+ * @Author: yianyian5
+ * @Date: 2021-08-02
+ * @LastEditTime: 2021-08-04 21:05:14
+ * @LastEditors: yianyian5
+ * @FilePath: \Data-Structure\linear_linked_list\list.h
+ * Talk is cheap,show me the code.
+ */
+
 #pragma once
-/***********
-LINEAR_LINKED_LIST template
-yianyian5
-2021.08.02
-***********/
 
 #include"list_node.h"
 

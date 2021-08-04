@@ -1,8 +1,12 @@
-/*********
-LINEAR_LIST_VECTOR  template
-yianyian5 
-2021.08.01
-**********/
+/*
+ * @Author: yianyian5
+ * @Date: 2021-08-01
+ * @LastEditTime: 2021-08-04 21:07:00
+ * @LastEditors: yianyian5
+ * @FilePath: \Data-Structure\linear_list_vector\vector.h
+ * Talk is cheap,show me the code.
+ */
+
 
 #define DEFAULT_CAPACITY  3 
 #ifndef LINEAR_LIST_VECTOR

@@ -1,3 +1,13 @@
+/*
+ * @Author: yianyian5
+ * @Date: 2021-08-02
+ * @LastEditTime: 2021-08-04 21:04:40
+ * @LastEditors: yianyian5
+ * @FilePath: \Data-Structure\linear_linked_list\list_test.cpp
+ * Talk is cheap,show me the code.
+ */
+
+
 #include<iostream>
 #include"list.h"
 using namespace std;
