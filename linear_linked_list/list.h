@@ -1,12 +1,3 @@
-/*
- * @Author: yianyian5
- * @Date: 2021-08-02
- * @LastEditTime: 2021-08-04 21:05:14
- * @LastEditors: yianyian5
- * @FilePath: \Data-Structure\linear_linked_list\list.h
- * Talk is cheap,show me the code.
- */
-
 #pragma once
 
 #include"list_node.h"
@@ -27,6 +18,9 @@ public:
 	list(list<T> const& L, int r, int n);  //从现有列表L的秩为r的项开始复制后面的n项
 	~list();          //释放包括头尾节点在内的所有节点
 	//常用操作
+	list_node<T>* get_trailer() { return trailer; }
+	list_node<T>* get_header() { return header; }
+	list_node<T>* get_last() { return trailer->pred; }
 	T& operator[](int r) const;   //重载[]运算符，返回T型数据
 	int size() const;  //返回当前列表元素个数
 	list_node<T>* find_by_value(T const& e) const;  //按值查找元素
@@ -36,6 +30,8 @@ public:
 	list_node<T>* insert_as_before(list_node<T>* p, T const& e);  // 插到指定结点的前面
 	list_node<T>* insert_as_after(list_node<T>* p, T const& e);
 	list_node<T>* insert_by_rank(int k, T const& e);  //按秩插入
+	list_node<T>* insertAsFirst ( T const& e );    //当作首节点插入
+	list_node<T>* insertAsLast ( T const& e ); //当作尾节点插入
 	void traverse(void(*visit) (T &));   //遍历器
 };
 
@@ -163,6 +159,14 @@ list_node<T>* list<T>::insert_by_rank(int k, T const& e) {
 	_size++;
 	return p->insertaspred(e);
 }
+
+template <class T> 
+list_node<T>* list<T>::insertAsFirst ( T const& e )
+{  _size++; return header->insertassucc ( e );  } //e当作首节点插入
+
+template <class T> 
+list_node<T>* list<T>::insertAsLast ( T const& e )
+{  _size++; return trailer->insertaspred ( e );  } //e当作末节点插入
 
 template<class T>
 void list<T>::traverse(void(*visit) (T &)) {
