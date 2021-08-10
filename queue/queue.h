@@ -21,4 +21,4 @@ class queue:public list<T> {
 };
 
 
-#endif // 
+#endif 
