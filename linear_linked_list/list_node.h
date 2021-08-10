@@ -1,11 +1,4 @@
-/*
- * @Author: yianyian5
- * @Date: 2021-08-02
- * @LastEditTime: 2021-08-05 09:08:53
- * @LastEditors: yianyian5
- * @FilePath: \Data-Structure\linear_linked_list\list_node.h
- * Talk is cheap,show me the code.
- */
+
 
 
 #ifndef LINEAR_LINKED_LIST_NODE

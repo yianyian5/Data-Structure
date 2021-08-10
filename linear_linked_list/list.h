@@ -21,6 +21,7 @@ public:
 	list_node<T>* get_trailer() { return trailer; }
 	list_node<T>* get_header() { return header; }
 	list_node<T>* get_last() { return trailer->pred; }
+	list_node<T>* get_first() { return header->succ; }
 	T& operator[](int r) const;   //重载[]运算符，返回T型数据
 	int size() const;  //返回当前列表元素个数
 	list_node<T>* find_by_value(T const& e) const;  //按值查找元素

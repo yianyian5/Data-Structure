@@ -6,9 +6,9 @@
 template<class T>
 class stack_l:public list<T>{
     public:
-        stack_l():list<T>(){
-            
-        }
+        stack_l() :list<T>() {}
+        bool empty(){return (this->size() == 0) }
+        int _size()
         stack_l<T>* push(T const& e){
             this->insertAsLast(e);
             return this;
@@ -17,7 +17,7 @@ class stack_l:public list<T>{
             return this->remove(this->get_last());
         }
         T& _top(){
-            return this->find_by_rank(this->size() - 1)->data;
+            return this->find_by_rank(this->size() - 1)->node_value();
         }
 
 };
